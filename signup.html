@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create account | FoodMart</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your FoodMart account.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-brand-panel" aria-labelledby="join-title">
+        <a href="index.html" class="auth-logo-link" aria-label="FoodMart home">
+          <img src="images/logo.png" alt="FoodMart" class="auth-logo">
+        </a>
+
+        <div class="auth-brand-content">
+          <span class="auth-eyebrow">A better basket begins here</span>
+          <h1 id="join-title">Freshness, made personal.</h1>
+          <p>Create your FoodMart account and make every grocery run simpler, from your first search to your next delivery.</p>
+
+          <ul class="auth-benefits list-unstyled mb-0">
+            <li>
+              <span class="auth-benefit-icon" aria-hidden="true">✓</span>
+              <span>Get tailored picks from the products you love.</span>
+            </li>
+            <li>
+              <span class="auth-benefit-icon" aria-hidden="true">✓</span>
+              <span>Check out smoothly with your saved delivery information.</span>
+            </li>
+          </ul>
+        </div>
+
+        <p class="auth-brand-note mb-0">Your everyday market, online.</p>
+      </section>
+
+      <section class="auth-form-panel" aria-labelledby="create-account-title">
+        <div class="auth-form-wrap">
+          <a href="index.html" class="auth-back-link">← Back to shop</a>
+
+          <div class="auth-card">
+            <span class="auth-card-kicker">Join FoodMart</span>
+            <h2 id="create-account-title">Create your account</h2>
+            <p class="auth-card-intro">A few details and you’ll be ready to shop.</p>
+
+            <form class="auth-form">
+              <div class="auth-name-grid">
+                <div class="auth-field">
+                  <label for="first-name">First name</label>
+                  <input id="first-name" name="firstName" type="text" placeholder="First name" autocomplete="given-name" required>
+                </div>
+                <div class="auth-field">
+                  <label for="last-name">Last name</label>
+                  <input id="last-name" name="lastName" type="text" placeholder="Last name" autocomplete="family-name" required>
+                </div>
+              </div>
+
+              <div class="auth-field">
+                <label for="signup-email">Email address</label>
+                <input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+
+              <div class="auth-field">
+                <label for="signup-password">Create a password</label>
+                <input id="signup-password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+              </div>
+
+              <label class="auth-checkbox auth-checkbox-top">
+                <input type="checkbox" name="updates">
+                <span>Send me fresh picks, offers, and weekly inspiration.</span>
+              </label>
+
+              <button type="button" class="btn btn-primary auth-submit">Create account</button>
+            </form>
+
+            <p class="auth-switch mb-0">Already have an account? <a href="login.html">Sign in</a></p>
+          </div>
+
+          <p class="auth-legal">By creating an account, you agree to FoodMart’s Terms of Service and Privacy Policy.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
